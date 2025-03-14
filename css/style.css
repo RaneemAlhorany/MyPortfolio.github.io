@@ -1,0 +1,318 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #000000;
+  --second-bg-color: #2b9dba ;
+  --text-color: #fff;
+  --main-color: #2b9dbac4;
+  --red-color:#FF0000;
+}
+
+.heading1{
+  font-size: 40px;
+  margin: 5px;
+}
+
+.heading2{
+  font-size: 25px;
+  margin: 5px;
+  display: inline-block;
+}
+
+span{
+  color: var(--main-color);
+}
+
+p{
+  line-height: 25px;
+  margin: 10px;
+}
+
+ul{
+  float: right;  
+  font-size: 20px;
+  margin-right: 10px;
+}
+  
+li{
+  list-style-type: none;
+  display: inline-block;
+  margin: 3px;
+}
+
+a{
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 10px;
+}
+
+i{
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  border-radius: 50%;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: var(--main-color) 5px 5px 15px;
+}
+
+#Home{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 15px;
+}
+
+#Home nav{
+  position: fixed;
+  padding: 15px;
+  width: 100vw;
+  background-color: var(--bg-color);
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.mainInfo{
+  padding-top: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+}
+
+.info{
+  width: 60%;
+  margin: 10px;
+}
+
+.info ul{
+  margin-top: 15px;
+  float: left;
+}
+
+.mainInfo img{
+  margin: 10px;
+  width: 30%;
+  border-radius: 50%;
+  border: var(--main-color) 5px solid;
+  position: relative;
+}
+
+/*! effect for home section  */
+#Home nav ul li a:hover{
+  color: var(--red-color);
+}
+
+
+
+#Home .mainInfo .info ul li a i:hover{
+  color: var(--red-color);
+  border: 2px solid var(--red-color);
+}
+
+
+#About{
+  background-color: var(--second-bg-color);
+  color: var(--text-color);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+  
+#About img {
+  width: 30%;
+  margin: 50px;
+  border-radius: 25%;
+  border: var(--bg-color) 5px solid;
+}
+
+#About div{
+  width: 70%;
+  margin: 10px;
+  padding: 10px;
+}
+
+#About div span {
+  color: var(--bg-color);
+}
+
+#About div a {
+  display: inline-block;
+  border: 2px solid var(--bg-color);
+  border-radius: 10px;
+  margin: 10px;
+  background-color: var(--bg-color);
+  padding: 15px;
+}
+
+/*! effect for home section  */
+#About  a:hover{
+  color: var(--red-color);
+}
+
+.container{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 25px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.card i{
+    font-size: 1.5rem;
+}
+
+.card h4{
+  font-size: 1.5rem;
+}
+
+.card p{
+  font-size: 1rem;
+  padding: 5px;
+}
+
+#Projects{
+  background-color: var(--second-bg-color);
+  color: var(--text-color);
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Projects span{
+  color: var(--bg-color);
+}
+
+.project_detail{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.project_detail .card a  img{
+  width: 15em;
+  padding: 5px;
+  margin: 5px;
+  height: 15em;
+}
+
+.card:hover{
+  border: 2px solid var(--red-color);
+  transform: scale(1) translate(10px, 10px);
+   transition: 1s;
+   box-shadow: var(--text-color) 5px 5px 20px;
+}
+
+
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--second-bg-color);
+}
+
+.footer div p {
+  padding: 0px 10px;
+}
+
+
+.footer div ul li a i {
+  padding: 10px;
+  font-size: small;
+  background-color: var(--bg-color);
+}
+
+.footer #back {
+  font-size: x-large;
+  padding: 10px;
+  border: 2px solid var(--main-color);
+  border-radius: 20px;
+  background-color: var(--bg-color);
+}
+
+.footer  ul li a  i:hover {
+  color: var(--red-color);
+  border: 2px solid var(--red-color);
+}
+
+.footer  #back:hover {
+  color: var(--red-color);
+  border: 2px solid var(--red-color);
+}
+
+@media screen and (max-width: 768px){
+
+ 
+ nav  { 
+  float: none;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+nav ul li {
+
+  float: left;
+}
+
+  .mainInfo img{
+    width: 60%;
+  }
+  
+  .info{
+    width: 100%;
+    margin: 10px;
+  
+  }
+
+  #About {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #About img {
+    width: 60%;
+    margin: 50px;
+  }
+
+  #About div{
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    line-height: 25px;
+  }
+
+  #Contact h2{
+    font-size: 25px;
+  }
+
+  #Contact h1{
+    font-size: 30px;
+  }
+
+}
